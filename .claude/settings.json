@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "boss-zhipin": {
+      "command": "/bin/bash",
+      "args": [
+        "/Users/hppppp/Downloads/bosszp/run_mcp.sh"
+      ],
+      "disabled": false
+    }
+  }
+}

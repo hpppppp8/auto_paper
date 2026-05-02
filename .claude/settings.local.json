@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open *)",
+      "Bash(osascript *)",
+      "Bash(python3 -c \"import openpyxl; print\\('ok'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 *)",
+      "Bash(curl -sL 'https://static.zhipin.com/zhipin-geek-spa/web/v6562/static/fonts/ui-icons.6f0a763.6f0a7632.ttf' -o /tmp/boss_font.ttf)",
+      "Read(//tmp/**)",
+      "Bash(screencapture -x /tmp/fullscreen.png)",
+      "Bash(screencapture -x /Users/hppppp/Downloads/bosszp/page_screenshot.png)",
+      "Bash(chmod +x /Users/hppppp/Downloads/bosszp/.claude/skills/boss-zhipin-scraper/scripts/scrape.py)",
+      "Bash(git remote *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git add *)",
+      "Bash(git rebase *)"
+    ]
+  }
+}
