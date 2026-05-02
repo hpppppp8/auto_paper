@@ -1,14 +1,17 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
 from storage.models import Base, Company, HRContact, Job
 from storage.cleaner import clean_salary, clean_experience, clean_education, clean_location
 
-DB_PATH = 'jobs.db'
+
+def get_db_url():
+    return os.environ.get('DATABASE_URL', 'sqlite:///jobs.db')
 
 
 def get_engine():
-    return create_engine(f'sqlite:///{DB_PATH}', echo=False)
+    return create_engine(get_db_url(), echo=False)
 
 
 def init_db():
